@@ -1,0 +1,9 @@
+.wrapper
+  .new-post
+    = form_with model: @post, local: true do |f|
+      .new-post__form
+        = f.text_field :name, class: 'post-name', placeholder: 'タイトル'
+        = f.text_area :text, class: 'post-text', placeholder: '本文'
+        = f.label :image, class: 'post-image' do
+          = f.file_field :image, class: 'post-file'
+      = f.submit 'Send', class: 'submit-btn'  

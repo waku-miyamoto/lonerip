@@ -1,0 +1,116 @@
+.devise-title{
+  background-color: rgba(0, 0, 0, 0.418);
+  margin: 20px 500px;
+  color: white;
+  font-weight: bolder;
+  font-size: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  letter-spacing : 4px;                /* 文字間 */
+  text-shadow    : 
+       2px  2px 1px black,
+      -2px  2px 1px black,
+       2px -2px 1px black,
+      -2px -2px 1px black,
+       2px  0px 1px black,
+       0px  2px 1px black,
+      -2px  0px 1px #000000,
+       0px -2px 1px black;
+}
+.signup-signin{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(32, 30, 30, 0.418);
+  margin: 20px 500px;
+  color: white;
+  text-align: center;
+  .field{
+    padding: 40px;
+    .user-ent{
+      background-color: rgba(0, 0, 0, 0.418);
+      height: 60px;
+      width: 400px;
+      font-size: 40px;
+      color: #ffffff;
+    }
+  }
+}
+.user_nav{
+  color: white;
+  font-size: 30px;
+  display: flex;
+  text-align: center;
+  li{
+    font-size: 15px;
+  color: white;
+.user-set{
+  text-decoration: none;
+  color: white;
+  border: 1px solid;
+}
+  }
+}
+.grid-6{
+  color: white;
+  font-size: 30px;
+  display: flex;
+  text-align: center;
+  .user-new{
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid;
+}
+}
+.post{
+  text-decoration: none;
+  color: white;
+  border: 1px solid;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-top: 20px;
+  height: 30px;
+}
+.user-setup{
+  display       : inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 18pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  background-color: rgba(32, 30, 30, 0.418);     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */  /* 影の設定 */
+  border        : 2px solid white; 
+  margin-bottom: 30px;
+}
+.setup{
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  margin-top: 20px;
+}
+.error_explanation{
+  background-color: rgba(0, 0, 0, 0.418);
+  margin: 20px 500px;
+  color: white;
+  font-weight: bolder;
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  letter-spacing : 4px;                /* 文字間 */
+  text-shadow    : 
+       2px  2px 1px black,
+      -2px  2px 1px black,
+       2px -2px 1px black,
+      -2px -2px 1px black,
+       2px  0px 1px black,
+       0px  2px 1px black,
+      -2px  0px 1px #000000,
+       0px -2px 1px black;
+}
