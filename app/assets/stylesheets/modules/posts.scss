@@ -1,0 +1,48 @@
+.header{
+  background-color:rgb(3, 41, 3);
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 5px solid rgb(4, 36, 4);
+  box-sizing: border-box;
+  .title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 46vw;
+    .main-title{
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+.wrapper{
+  background-image: image-url("DSC_1372.jpg");
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+  .main{
+    .contents{
+      display: flex;
+      font-size: 20px;
+      color: white;
+      margin-top: 50px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+      &__item{
+        margin-left: 100px;
+        .post-image{
+          height: 200px;
+          width: 300px;
+        }
+        .content-title{
+          background-color: rgba(32, 30, 30, 0.418);
+          text-align: center;
+          margin-bottom: 10px;
+          margin-top: -10px;
+        }
+      }
+    }
+  }
+}
