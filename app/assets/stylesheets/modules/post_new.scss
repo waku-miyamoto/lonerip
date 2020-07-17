@@ -10,8 +10,7 @@
       border-style: none;
     .post-name{
       height: 50px;
-      width: calc( 100vw - 800px);
-      margin-top: 20px;
+      width: 600px;
       background-color:rgba(0, 0, 0, 0.432);
       color: white;
       padding: 0px 20px;
@@ -20,11 +19,14 @@
     }
     .post-text{
       height: 500px;
-      width: calc( 100vw - 500px);
+      width: 600px;
       margin-top: 20px;
       background-color:rgba(0, 0, 0, 0.432);
       color: white;
       padding: 10px 20px;
+     p{ 
+       white-space: pre-wrap;
+     }
     }
     .post-image{
       margin-top: 20px;
@@ -42,5 +44,11 @@
     height: 60px;
     font-size: 30px;
     color:white;
+    margin-bottom: 20px;
   }
+}
+
+.title-asist{
+  margin-top: 30px;
+  color: white;
 }

@@ -1,0 +1,18 @@
+.wrapper
+  %ul.post-user
+    【投稿者】
+    %li.post-user-name= @user.name
+  .pagination= paginate @posts
+  .main
+    - @posts.each do |post|
+      .contents
+        .contents__item
+          = link_to image_tag(post.image.url,:size => '300x200', class: 'post-image'), post_path(post.id)
+          .content-title= post.name.truncate(24, omission: '...')
+      .post-infomatoin
+      - if user_signed_in? && current_user.id == post.user_id
+        = link_to edit_post_path(post.id), class: "post-info", method: :get do
+          = icon('fas', 'edit', class: "post-edit")
+        = link_to post_path(post.id), class: "post-info-destroy", method: :delete do
+          = icon('fas', 'trash-alt', class: "post-destroy")
+  .pagination= paginate @posts

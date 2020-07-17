@@ -1,0 +1,44 @@
+.wrapper
+  %ul.post-user
+    【投稿者】
+    = link_to user_path(@post.user.id), class: "post-user-name" do
+      %li.post-user-name= @post.user.name
+  .main
+    .main-contents
+      .contents-favorite 
+        - if user_signed_in?
+          - if current_user.already_favorited?(@post)
+            = link_to post_favorite_path(@post), method: :delete do
+              = icon('fas', 'heart', class: "favorite-destroy")
+          -else
+            = link_to  post_favorites_path(@post), method: :create do
+              = icon('far', 'heart', class: "favorite-create")
+          .favorite= @post.favorites.count
+      .contents-show
+        %ul.post-title
+          【タイトル】
+          %li= safe_join(@post.name.split("\n"), tag(:br))
+        .post-image
+          = image_tag(@post.image.url, :size => "600x400")
+        .post-text
+          <情報>
+          .post-message= safe_join(@post.text.split("\n"), tag(:br))
+    .contents-comment
+      - if current_user
+        = form_with(model: [@post, @comment], local: true, id: "new_comment") do |form|
+          = form.text_area :text, placeholder: "コメントする" , rows: "2", class: "textbox"
+          = form.submit "SEND", class: "form__submit"
+      - else
+        .comments-use 
+          ※※※コメントの投稿には新規登録/ログインが必要です※※※
+      .comments
+        ＜コメント一覧＞
+      .comments-index
+        - @comments.each do |comment|
+          %p
+            %strong
+              = link_to comment.user.name, "/users/#{comment.user_id}", class: "post-user-name"
+              ：
+            .comment-text= comment.text      
+        
+       
