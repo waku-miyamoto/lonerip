@@ -26,19 +26,19 @@
     .contents-comment
       - if current_user
         = form_with(model: [@post, @comment], local: true, id: "new_comment") do |form|
-          = form.text_area :text, placeholder: "コメントする" , rows: "2", class: "textbox"
+          = form.text_area :text, placeholder: "コメントする" , rows: "1", class: "textbox"
           = form.submit "SEND", class: "form__submit"
       - else
-        .comments-use 
-          ※※※コメントの投稿には新規登録/ログインが必要です※※※
+      .comments-use 
+        ※※※コメントの投稿には新規登録/ログインが必要です※※※
       .comments
         ＜コメント一覧＞
       .comments-index
-        - @comments.each do |comment|
-          %p
-            %strong
-              = link_to comment.user.name, "/users/#{comment.user_id}", class: "post-user-name"
-              ：
-            .comment-text= comment.text      
+        - if @comments
+          - @comments.each do |comment|
+            %p
+              %strong
+                = link_to comment.user.name, "/users/#{comment.user_id}", class: "post-user-name"
+            .post-comment= safe_join(comment.text.split("\n"), tag(:br))     
         
        
