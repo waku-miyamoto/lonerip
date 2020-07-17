@@ -7,4 +7,10 @@ class User < ApplicationRecord
   validates :name, presence: true, uniqueness: true
 
   has_many :posts
+  has_many :comments, dependent: :destroy
+  has_many :favorites, dependent: :destroy
+
+  def already_favorited?(post)
+    self.favorites.exists?(post_id: post.id)
+  end
 end
