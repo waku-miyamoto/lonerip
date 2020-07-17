@@ -134,8 +134,8 @@
 }
 
 .contents-favorite{
-  margin-top: 30px;
-      margin-left: 30px;
+      margin-top: 50px;
+      margin-left: 150px;
      display: flex;
       background-color: rgba(0, 0, 0, 0.418);
       word-wrap: break-word;
@@ -157,7 +157,7 @@
 }
 }
 .contents-show{
-  margin-left: 30px;
+  margin-left: 150px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.418);
   margin-bottom: 30px;
@@ -167,7 +167,7 @@
 
 
 .contents-comment{
-  margin-top: 30px;
+  margin-top: 50px;
   margin-left: 70px;
   #new_comment{
     display: flex;
@@ -186,21 +186,34 @@
 }
 
 .comments-use {
-  font-size: 30px;
- width: 800px;
-  background-color: rgba(0, 0, 0, 0.418);
+  font-size: 20px;
+ width: 707px;
+ background-color: rgba(0, 0, 0, 0.418);
   text-align: center;
 }
-
 .comments{
   background-color: rgba(0, 0, 0, 0.418);
-  font-size: 30px;
+  font-size: 20px;
+  border-bottom: 1px solid gray;
 }
 .comments-index{
   background-color: rgba(0, 0, 0, 0.418);
   font-size: 30px;
+  overflow-y: scroll;
+  height: 500px;
+  width: 707px;
  .post-user-name{
    color: white;
    justify-content: flex-start;
+   padding-left: 10px;
+   
+
  }
+}
+.post-comment{
+  border-bottom: 1px solid gray;
+  padding-left: 20px;
+  padding-right: 5px;
+  margin-top: -20px;
+  font-size: 20px;
 }
