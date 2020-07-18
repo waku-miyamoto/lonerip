@@ -1,7 +1,11 @@
 class PostsController < ApplicationController
+
   def index
-    @posts = Post.includes(:user).order("created_at DESC")
-    @posts = Post.page(params[:page]).per(10).order('updated_at DESC')
+    @q = Post.ransack(params[:q])
+    @posts = @q.result(distinct: true)
+               .includes(:user)
+               .page(params[:page]).per(10)
+               .order('updated_at DESC')
   end
 
   def new
