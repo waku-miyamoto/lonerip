@@ -73,3 +73,5 @@ gem 'devise-i18n-views'
 
 gem 'kaminari'
 gem 'bootstrap', '~> 4.1.1'
+
+gem 'ransack'
