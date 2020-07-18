@@ -6,4 +6,5 @@ class Post < ApplicationRecord
 
   validates :image, presence: true
   validates :name, length: { maximum: 30 }
+
 end

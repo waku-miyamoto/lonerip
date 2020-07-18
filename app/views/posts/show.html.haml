@@ -6,6 +6,9 @@
   .main
     .main-contents
       .contents-favorite 
+        - unless user_signed_in?
+          = icon('fas', 'heart', class: "favorite-locks")
+          .favorite= @post.favorites.count
         - if user_signed_in?
           - if current_user.already_favorited?(@post)
             = link_to post_favorite_path(@post), method: :delete do
@@ -29,8 +32,8 @@
           = form.text_area :text, placeholder: "コメントする" , rows: "1", class: "textbox"
           = form.submit "SEND", class: "form__submit"
       - else
-      .comments-use 
-        ※※※コメントの投稿には新規登録/ログインが必要です※※※
+        .comments-use 
+          ※※※コメントの投稿には新規登録/ログインが必要です※※※
       .comments
         ＜コメント一覧＞
       .comments-index
