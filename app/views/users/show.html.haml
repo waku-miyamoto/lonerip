@@ -1,7 +1,8 @@
 .wrapper
-  %ul.post-user
-    【投稿者】
-    %li.post-user-name= @user.name
+  .post-user
+    %ul.post-users
+      【投稿者】
+      %li.post-user-name= @user.name
   .pagination= paginate @posts
   .main
     - @posts.each do |post|

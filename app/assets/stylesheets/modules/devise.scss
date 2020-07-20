@@ -1,6 +1,9 @@
 .devise-title{
   background-color: rgba(0, 0, 0, 0.418);
-  margin: 20px 500px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30vw;
   color: white;
   font-weight: bolder;
   font-size: 50px;
@@ -18,12 +21,16 @@
       -2px  0px 1px #000000,
        0px -2px 1px black;
 }
+
 .signup-signin{
   display: flex;
   align-items: center;
   flex-direction: column;
   background-color: rgba(32, 30, 30, 0.418);
-  margin: 20px 500px;
+  width: 30vw;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 30px;
   color: white;
   text-align: center;
   .field{
@@ -31,7 +38,7 @@
     .user-ent{
       background-color: rgba(0, 0, 0, 0.418);
       height: 60px;
-      width: 400px;
+      width: 25vw;
       font-size: 40px;
       color: #ffffff;
     }
@@ -87,6 +94,7 @@
   transition    : .3s;         /* なめらか変化 */  /* 影の設定 */
   border        : 2px solid white; 
   margin-bottom: 30px;
+  
 }
 .setup{
   text-decoration: none;

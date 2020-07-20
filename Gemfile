@@ -76,3 +76,9 @@ gem 'kaminari'
 gem 'bootstrap', '~> 4.1.1'
 
 gem 'ransack'
+
+gem 'rails_12factor', group: :production
+
+# gem 'therubyracer', platforms: :ruby
+
+gem 'mini_racer'
