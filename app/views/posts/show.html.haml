@@ -1,9 +1,11 @@
 .wrapper
-  %ul.post-user
-    【投稿者】
-    = link_to user_path(@post.user.id), class: "post-user-name" do
-      %li.post-user-name= @post.user.name
-  .main
+  .post-user
+    .post-user-info
+      %ul.post-users
+        【投稿者】
+      = link_to user_path(@post.user.id), class: "post-users-name" do
+        %li.post-user-name= @post.user.name
+  .content-info
     .main-contents
       .contents-favorite 
         - unless user_signed_in?

@@ -14,8 +14,8 @@ default: &default
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
-  password:
   socket: /tmp/mysql.sock
+  host: localhost
 
 development:
   <<: *default
@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: lonerip_production
-  username: lonerip
+  database: heroku_2188afef7127326
+  username: be65c38157bba2
   password: <%= ENV['LONERIP_DATABASE_PASSWORD'] %>

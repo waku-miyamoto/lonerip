@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
+  gem 'sqlite3', '~> 1.4'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -75,3 +76,9 @@ gem 'kaminari'
 gem 'bootstrap', '~> 4.1.1'
 
 gem 'ransack'
+
+gem 'rails_12factor', group: :production
+
+# gem 'therubyracer', platforms: :ruby
+
+gem 'mini_racer'

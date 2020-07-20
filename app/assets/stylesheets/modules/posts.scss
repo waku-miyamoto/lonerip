@@ -31,7 +31,8 @@
     color: white;
     text-align: center;
     font-size: 40px;
-    margin: 0px 700px;
+    display: flex;
+    justify-content: center;
     .post-user-name{
       background-color: rgba(0, 0, 0, 0.418);
       text-decoration: none;
@@ -140,8 +141,9 @@
 }
 
 .contents-favorite{
+  
       margin-top: 50px;
-      margin-left: 150px;
+      
      display: flex;
       background-color: rgba(0, 0, 0, 0.418);
       word-wrap: break-word;
@@ -167,7 +169,9 @@
 }
 }
 .contents-show{
-  margin-left: 150px;
+  width: 35vw;
+  
+  
   text-align: center;
   background-color: rgba(0, 0, 0, 0.418);
   margin-bottom: 30px;
@@ -182,13 +186,14 @@
 
 .contents-comment{
   margin-top: 50px;
-  margin-left: 70px;
+  width: 40vw;
+  margin-left: 30px;
   #new_comment{
     display: flex;
   .textbox{
     font-size: 20px;
-    width: 600px;
     padding-left: 5px;
+    width: 40vw;
   }
   .form__submit{
     background-color: rgba(0, 175, 219, 0.527);
@@ -200,7 +205,8 @@
 }
 .comments-use {
   font-size: 20px;
- width: 707px;
+ width: 40vw;
+ 
  padding-top: 15px;
  padding-bottom: 15px;
  background-color: rgba(0, 0, 0, 0.418);
@@ -218,14 +224,14 @@
   font-size: 30px;
   overflow-y: scroll;
   height: 500px;
-  width: 707px;
+  
+  width: 40vw;
   box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.6);
         -webkit-box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.6);
         -moz-box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.6);
         border-radius: 0px 0px 5px 5px;
  .post-user-name{
    color: white;
-   justify-content: flex-start;
    padding-left: 10px;
    
 
@@ -243,12 +249,16 @@ li.post-user-name{
         -webkit-box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.6);
         -moz-box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.6);
         border-radius: 5px;
+        display: inline-block;
+       
 }
 #search-form{
   display: flex;
+  
 .search-field{
   margin-top: 30px;
-  margin-left: 580px;
+  margin-left: auto;
+  
   width: 500px;
   padding-left: 10px;
   padding-right: 10px;
@@ -256,10 +266,36 @@ li.post-user-name{
 }
 .search-submit{
   font-family: FontAwesome;
+  
+  margin-right: auto;
   margin-top: 30px;
   width: 60px;
   border: 1px solid gray;
   color: rgb(104, 104, 104);
   background-color: rgb(238, 238, 238);
 }
+}
+ul.post-users{
+  margin-top: 20px;
+  white-space: nowrap;
+  
+  
+}
+
+.main-contents{
+  
+}
+
+.content-info{
+  display: flex;
+  font-size: 40px;
+  color: white;
+  justify-content: space-around;
+}
+
+.post-user-info{
+  
+ margin-left: auto;
+ margin-right: auto;
+ text-align: center;
 }
