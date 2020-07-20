@@ -82,3 +82,4 @@ gem 'rails_12factor', group: :production
 # gem 'therubyracer', platforms: :ruby
 
 gem 'mini_racer'
+
