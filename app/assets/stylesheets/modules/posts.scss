@@ -236,12 +236,25 @@
  .post-user-name{
    color: white;
    padding-left: 10px;
-   
-
- }
+   }
+.comment-infomation{
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: flex-end;
+  .comment-info-destroy{
+  .comment-destroy{
+  padding-right: 10px;
+  color: white;
+  margin-top: -10px;
+  text-decoration: solid;
+  
+  
+  }
+}
+}
 }
 .post-comment{
-  border-bottom: 1px solid gray;
+
   padding-left: 20px;
   padding-right: 5px;
   margin-top: -20px;

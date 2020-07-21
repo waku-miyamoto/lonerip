@@ -44,6 +44,10 @@
             %p
               %strong
                 = link_to comment.user.name, "/users/#{comment.user_id}", class: "post-user-name"
-            .post-comment= safe_join(comment.text.split("\n"), tag(:br))     
+            .post-comment= safe_join(comment.text.split("\n"), tag(:br))
+            .comment-infomation
+              - if user_signed_in? && current_user.id == comment.user_id
+                = link_to post_comment_path(comment.post.id, comment.id), class: "comment-info-destroy", method: :delete do
+                  = icon('fas', 'trash-alt', class: "comment-destroy")
         
        
