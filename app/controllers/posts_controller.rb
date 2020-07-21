@@ -33,7 +33,7 @@ class PostsController < ApplicationController
     if post.user_id == current_user.id
     post.destroy
     end
-    redirect_to :root
+    redirect_back(fallback_location: root_path)
   end
 
   def edit
