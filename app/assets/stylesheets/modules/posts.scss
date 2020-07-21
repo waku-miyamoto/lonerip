@@ -70,7 +70,7 @@
   }
 .pagination{
  margin-top: 10px;
- margin-left: 375px;
+ justify-content: center;
 }
 
 .post-info{
@@ -107,7 +107,9 @@
 
 
 }
-
+.pagination{
+  
+}
 .pagination>li>a {          
   border: none;     /*枠線をなくす*/
   color: white;
