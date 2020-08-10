@@ -1,8 +1,9 @@
 .wrapper
-  = search_form_for(@q, id: "search-form")do |f|
-    = f.search_field :name_cont, class: "search-field", placeholder: "キーワード"
-    = button_tag type: 'submit', class: 'search-submit' do
-      = icon('fas', 'search', class: "search-button")
+  .search
+    = search_form_for(@q, id: "search-form")do |f|
+      = f.search_field :name_cont, class: "search-field", placeholder: "キーワード"
+      = button_tag type: 'submit', class: 'search-submit' do
+        = icon('fas', 'search', class: "search-button")
   .pagination= paginate @posts
   .main
     - @posts.each do |post|
@@ -11,3 +12,4 @@
           = link_to image_tag(post.image.url,:size => '300x200', class: 'post-image'), post_path(post.id)
           .content-title= post.name.truncate(24, omission: '...')
   .pagination= paginate @posts    
+  

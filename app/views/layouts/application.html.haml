@@ -1,0 +1,29 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Lonerip
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    %header.header
+      .title
+        = link_to "LONERIP", "/", class: "main-title"
+ 
+      - if user_signed_in?
+        .user_nav.grid-6
+          %span
+            = current_user.name
+            %ul.user__info
+              %li
+                = link_to "マイページ", "/users/#{current_user.id}", class: "user-set"
+                = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "user-set"
+          = link_to  "投稿する", new_post_path, class: "post"
+      - else
+        .grid-6
+          = link_to "ログイン", new_user_session_path, class: "user-new"
+          = link_to "新規登録", new_user_registration_path, class: "user-new"
+    = render 'layouts/notifications'
+    = yield
