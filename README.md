@@ -5,18 +5,18 @@
 # 使用技術
   Ruby on Rails
  ## gem
-  gem "haml-rails", ">= 1.0", '<= 2.0.1'
-  gem 'font-awesome-sass'
-  gem 'devise'
-  gem 'pry-rails'
-  gem 'carrierwave'
-  gem 'fog-aws'
-  gem 'mini_magick'
-  gem 'jquery-rails'
-  gem 'devise-i18n'
-  gem 'devise-i18n-views'
-  gem 'kaminari'
-  gem 'bootstrap', '~> 4.1.1'
-  gem 'ransack'
-  gem 'rails_12factor', group: :production
-  gem 'mini_racer'
+ - gem "haml-rails", ">= 1.0", '<= 2.0.1'
+ - gem 'font-awesome-sass'
+ - gem 'devise'
+ - gem 'pry-rails'
+ - gem 'carrierwave'
+ - gem 'fog-aws'
+ - gem 'mini_magick'
+ - gem 'jquery-rails'
+ - gem 'devise-i18n'
+ - gem 'devise-i18n-views'
+ - gem 'kaminari'
+ - gem 'bootstrap', '~> 4.1.1'
+ - gem 'ransack'
+ - gem 'rails_12factor', group: :production
+ - gem 'mini_racer'
