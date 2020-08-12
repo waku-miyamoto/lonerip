@@ -3,7 +3,7 @@
 # このアプリについて
   このアプリケーションは一人行動、一人旅、などをした時の写真を共有し、互いに情報を共有しコミュニケーションを取れるアプリケーションです。
 # 使用技術
-  Ruby on Rails
+  Ruby/Ruby on Rails/MYSQL//Github/AWS/Visual Studio Code
  ## gem
  - gem "haml-rails", ">= 1.0", '<= 2.0.1'
  - gem 'font-awesome-sass'
@@ -12,7 +12,6 @@
  - gem 'carrierwave'
  - gem 'fog-aws'
  - gem 'mini_magick'
- - gem 'jquery-rails'
  - gem 'devise-i18n'
  - gem 'devise-i18n-views'
  - gem 'kaminari'
