@@ -32,6 +32,8 @@ group :development, :test do
   gem 'sqlite3', '~> 1.4'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails', '~> 4.0.0.beta2'
+  gem 'factory_bot_rails'
 end
 
 group :development do
@@ -55,27 +57,17 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "haml-rails", ">= 1.0", '<= 2.0.1'
-
 gem 'font-awesome-sass'
-
 gem 'devise'
-
 gem 'pry-rails'
-
 gem 'carrierwave'
 gem 'fog-aws'
-
 gem 'mini_magick'
-
-
 gem 'devise-i18n'
 gem 'devise-i18n-views'
-
 gem 'kaminari'
 gem 'bootstrap', '~> 4.1.1'
-
 gem 'ransack'
-
 gem 'rails_12factor', group: :production
-
 gem 'mini_racer'
+gem 'jquery-rails'
