@@ -15,9 +15,10 @@ class PostsController < ApplicationController
   def create
     @post = Post.create(post_params)
     if @post.save
-      redirect_to :root      
+      redirect_to :root, notice: "投稿できました"  
     else
-      render :new, notice: "画像を選択してください"
+      flash.now[:alert] = "全て入力してください"
+      render :new
     end
 
   end
@@ -33,7 +34,7 @@ class PostsController < ApplicationController
     if post.user_id == current_user.id
     post.destroy
     end
-    redirect_back(fallback_location: root_path)
+    redirect_back(fallback_location: root_path, notice: "削除しました")
   end
 
   def edit
@@ -43,8 +44,9 @@ class PostsController < ApplicationController
   def update
     @post = Post.find_by(id: params[:id])
     if @post.update(post_params)
-      redirect_to :root      
+      redirect_to :root, notice: "編集しました"   
     else
+      flash.now[:alert] = "全て入力してください"
       render :edit
     end
   end
