@@ -1,5 +1,9 @@
 .devise-title{
   background-color: rgba(0, 0, 0, 0.418);
+  box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.6);
+    border-radius: 5px;
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -27,6 +31,10 @@
   align-items: center;
   flex-direction: column;
   background-color: rgba(32, 30, 30, 0.418);
+  box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.6);
+    border-radius: 5px;
   width: 30vw;
 margin-left: auto;
 margin-right: auto;
@@ -37,6 +45,10 @@ margin-bottom: 30px;
     padding: 40px;
     .user-ent{
       background-color: rgba(0, 0, 0, 0.418);
+      box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.6);
+    border-radius: 5px;
       height: 60px;
       width: 25vw;
       font-size: 40px;
@@ -104,6 +116,10 @@ margin-bottom: 30px;
 }
 .error_explanation{
   background-color: #0000006b;
+  box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.6);
+    border-radius: 5px;
   margin-left: 35vw;
   margin-right: 35vw;
   color: white;

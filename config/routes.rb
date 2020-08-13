@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     resources :favorites, only: [:create, :destroy]
     collection do
       get "search"
+      get "explain"
     end
   end
   resources :users, only: [:show]
