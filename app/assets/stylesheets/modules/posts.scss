@@ -140,9 +140,7 @@
 
 
 }
-.pagination{
-  
-}
+
 .pagination>li>a {          
   border: none;     /*枠線をなくす*/
   color: white;
@@ -261,16 +259,19 @@
   font-size: 30px;
   overflow-y: scroll;
   height: 500px;
-  
   width: 40vw;
   box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.6);
         -webkit-box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.6);
         -moz-box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.6);
         border-radius: 0px 0px 5px 5px;
- .post-user-name{
-   color: white;
-   padding-left: 10px;
-   }
+  .pagination{
+    font-size: 20px;
+  }
+      .post-user-name{
+        color: white;
+        padding-left: 10px;
+        }
+ 
 .comment-infomation{
   border-bottom: 1px solid gray;
   display: flex;
@@ -329,4 +330,7 @@ ul.post-users{
  margin-right: auto;
  text-align: center;
 }
-
+.created_at{
+  font-size: 10px;
+  margin-left:50px;
+}
