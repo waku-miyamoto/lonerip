@@ -58,7 +58,7 @@
 |name|string|null: false|
 |text|text|null: false|
 |image|string|null: false|
-|user_id|references|null: false|
+|user_id|references|null: false, foreign_key: true|
 
 
 ### Association
@@ -67,18 +67,20 @@
 - belongs_to :user
 
 ## favoritesテーブル
+
 |------|----|-------|
-|user_id|references|null: false|
-|post_id|references|null: false|
+|user_id|references|null: false, foreign_key: true|
+|post_id|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :post
 - belongs_to :user
 
 ## commentsテーブル
+
 |------|----|-------|
-|user_id|references|null: false|
-|post_id|references|null: false|
+|user_id|references|null: false, foreign_key: true|
+|post_id|references|null: false, foreign_key: true|
 |text|text|null: false|
 
 ### Association
