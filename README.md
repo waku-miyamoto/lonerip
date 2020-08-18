@@ -68,6 +68,7 @@
 
 ## favoritesテーブル
 
+|Column|Type|Options|
 |------|----|-------|
 |user_id|references|null: false, foreign_key: true|
 |post_id|references|null: false, foreign_key: true|
@@ -78,6 +79,7 @@
 
 ## commentsテーブル
 
+|Column|Type|Options|
 |------|----|-------|
 |user_id|references|null: false, foreign_key: true|
 |post_id|references|null: false, foreign_key: true|
