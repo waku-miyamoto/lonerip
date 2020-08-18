@@ -9,7 +9,12 @@
   手助けになれるようなコミュニケーションアプリがあればいいと思い制作しました。
 
 # DEMO
- ![toppage](toppage.png)
+ トップページ  
+  ![toppage](toppage.png)  
+  詳細ページ  
+ ![post_page](post_page.png)  
+ ユーザーページ  
+ ![user_page](user_page.png)
 
 # 使用技術
   Ruby/Ruby on Rails/MYSQL//Github/AWS/Visual Studio Code
