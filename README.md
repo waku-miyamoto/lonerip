@@ -7,6 +7,10 @@
   - 年々一人行動をする人が増えてきています。またコロナウイルスの影響もあり集団で行動しにくくなっている中、
   新たに一人行動をする際にどうすればいいのか、どう行った場所がおすすめなのか、など、新規ユーザーの  
   手助けになれるようなコミュニケーションアプリがあればいいと思い制作しました。
+
+# DEMO
+ ![toppage](スクリーンショット 2020-08-18 10.26.07.png)
+
 # 使用技術
   Ruby/Ruby on Rails/MYSQL//Github/AWS/Visual Studio Code
  ## gem
@@ -30,3 +34,53 @@
 # 工夫したポイント
   - 画面をスクロールするのが苦手なので全体はあまりスクロールしない作りにしました。
   また明るい色を極力抑え目に優しいよう心がけました。
+
+# DB設計
+
+## usersテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false, unique: true|
+|email|string|null: false, unique: true|
+|password|string|null: false|
+
+
+### Association
+- has_many :favorites, dependent: :destroy
+- has_many :comments, dependent: :destroy
+- has_many :posts
+
+## postsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|text|text|null: false|
+|image|string|null: false|
+|user_id|references|null: false|
+
+
+### Association
+- has_many :favorites, dependent: :destroy
+- has_many :comments, dependent: :destroy
+- belongs_to :user
+
+## favoritesテーブル
+|------|----|-------|
+|user_id|references|null: false|
+|post_id|references|null: false|
+
+### Association
+- belongs_to :post
+- belongs_to :user
+
+## commentsテーブル
+|------|----|-------|
+|user_id|references|null: false|
+|post_id|references|null: false|
+|text|text|null: false|
+
+### Association
+- belongs_to :post
+- belongs_to :user
