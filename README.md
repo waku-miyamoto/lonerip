@@ -9,7 +9,7 @@
   手助けになれるようなコミュニケーションアプリがあればいいと思い制作しました。
 
 # DEMO
- ![toppage](スクリーンショット 2020-08-18 10.26.07.png)
+ ![toppage](toppage.png)
 
 # 使用技術
   Ruby/Ruby on Rails/MYSQL//Github/AWS/Visual Studio Code
