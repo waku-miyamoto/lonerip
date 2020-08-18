@@ -11,9 +11,9 @@
 # DEMO
  トップページ  
   ![toppage](toppage.png)  
-  詳細ページ  
+  ユーザーページ    
  ![post_page](post_page.png)  
- ユーザーページ  
+  詳細ページ  
  ![user_page](user_page.png)
 
 # 使用技術
