@@ -11,6 +11,10 @@ Rails.application.routes.draw do
       get "explain"
     end
   end
-  resources :users, only: [:show]
+  resources :users, only: [:show] do
+    member do
+      get "profile"
+    end
+  end
 
 end

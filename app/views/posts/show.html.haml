@@ -3,7 +3,7 @@
     .post-user-info
       %ul.post-users
         【投稿者】
-      = link_to user_path(@post.user.id), class: "post-users-name" do
+      = link_to profile_user_path(@post.user.id), class: "post-users-name" do
         %li.post-user-name= @post.user.name
   .content-info
     .main-contents
