@@ -1,3 +1,10 @@
-.helloworld 
-  = link_to user_path(@user.id), class: "post-users-name" do
-    .post-user-name= @user.name
+.wrapper
+  .user-info
+    = @user.name
+  .user-menu
+    = link_to user_path(@user.id), class: "post-users-name" do
+      .post-user-name
+        投稿一覧
+    .user_favorite
+      .main
+        
