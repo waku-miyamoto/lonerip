@@ -1,9 +1,9 @@
 .wrapper
   .user-info
-    = @user.name
+    .user-name= @user.name
   .user-menu
-    = link_to user_path(@user.id), class: "post-users-name" do
-      .post-user-name
+    = link_to user_path(@user.id), class: "user-post-index" do
+      .post-index
         投稿一覧
     .user_favorite
       .main
