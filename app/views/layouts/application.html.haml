@@ -9,21 +9,45 @@
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
   %body
     %header.header
-      .title
-        = link_to "LONERIP", "/", class: "main-title"
+      %input#openSidebarMenu.openSidebarMenu{:type => "checkbox"}/
+      %label.sidebarIconToggle{:for => "openSidebarMenu"}
+        .spinner.diagonal.part-1
+        .spinner.horizontal
+        .spinner.diagonal.part-2
+      #sidebarMenu
+        %ul.sidebarMenuInner
+          %li
+            - if user_signed_in?
+              = current_user.name
+            - else
+              %li= link_to "ログイン", new_user_session_path, class: "user-new"
+              %li= link_to "新規登録", new_user_registration_path, class: "user-new"
+          %li
+            %a{:href => "https://vanila.io", :target => "_blank"} aa
+          %li
+            %a{:href => "https://instagram.com/plavookac", :target => "_blank"} Instagram
+          %li
+            %a{:href => "https://twitter.com/plavookac", :target => "_blank"} Twitter
+          %li
+            %a{:href => "https://www.youtube.com/channel/UCDfZM0IK6RBgud8HYGFXAJg", :target => "_blank"} YouTube
+          %li
+            %a{:href => "https://www.linkedin.com/in/plavookac/", :target => "_blank"} Linkedin
+    -# %header.header
+    -#   .title
+    -#     = link_to "LONERIP", "/", class: "main-title"
  
-      - if user_signed_in?
-        .user_nav.grid-6
-          %span
-            = current_user.name
-            %ul.user__info
-              %li
-                = link_to "マイページ", "/users/#{current_user.id}", class: "user-set"
-                = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "user-set"
-          = link_to  "投稿する", new_post_path, class: "post"
-      - else
-        .grid-6
-          = link_to "ログイン", new_user_session_path, class: "user-new"
-          = link_to "新規登録", new_user_registration_path, class: "user-new"
+    -#   - if user_signed_in?
+    -#     .user_nav.grid-6
+    -#       %span
+    -#         = current_user.name
+    -#         %ul.user__info
+    -#           %li
+    -#             = link_to "マイページ", "/users/#{current_user.id}", class: "user-set"
+    -#             = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "user-set"
+    -#       = link_to  "投稿する", new_post_path, class: "post"
+    -#   - else
+    -#     .grid-6
+    -#       = link_to "ログイン", new_user_session_path, class: "user-new"
+    -#       = link_to "新規登録", new_user_registration_path, class: "user-new"
     = render 'layouts/notifications'
     = yield

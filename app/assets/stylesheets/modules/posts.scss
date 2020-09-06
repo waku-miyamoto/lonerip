@@ -1,13 +1,13 @@
 
-.header{
-  background-image: image-url("00003149.jpg");
-  width: 100vw;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 5px solid rgb(59, 14, 14);
-  box-sizing: border-box;
+// .header{
+//  background-image: image-url("00003149.jpg");
+//   width: 100vw;
+//   height: 100px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   border: 5px solid rgb(59, 14, 14);
+//   box-sizing: border-box; 
   .title{
     font-size: 30px;
     font-weight: bold;
@@ -18,7 +18,7 @@
       margin-left: 50px;
       
     }
-  }
+  // }
   
   .user-set{
     width: 20px;
@@ -95,6 +95,7 @@
         -webkit-box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.6);
         -moz-box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.6);
         border-radius: 5px;
+        height: 230px;
       &__item{
         width: 300px;
         
