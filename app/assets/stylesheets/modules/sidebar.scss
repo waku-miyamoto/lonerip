@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
-// html, body {
-//     overflow-x: hidden;
-//     height: 100%;
-// }
-// body {
-//     background: #fff;
-//     padding: 0;
-//     margin: 0;
-//     font-family: 'Varela Round', sans-serif;
-// }
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+body {
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+}
 .header {
   background-image: image-url("00003149.jpg");
   width: 100vw;
@@ -22,11 +22,22 @@
     width: 100%;
     max-width: 100%;
     box-shadow: none;
-    background-color: #FC466B;
-    position: fixed;
     height: 60px!important;
     overflow: hidden;
     z-index: 10;
+    position: fixed;
+}
+.userimage-infomation{
+  pointer-events: none;
+}
+a{
+  display: block;
+}
+.userimage-info{
+  display: flex;
+.userimage{
+  border-radius: 50%;
+}
 }
 // .main {
 //     margin: 0 auto;
@@ -52,10 +63,11 @@
     position: fixed;
     left: 0;
     width: 250px;
-    margin-top: 60px;
+    margin-top: 15px;
     transform: translateX(-250px);
     transition: transform 250ms ease-in-out;
-    background: linear-gradient(180deg, rgb(80, 26, 1) 0%, #000000 100%);
+    // background: linear-gradient(180deg, rgb(80, 26, 1) 0%, #000000 100%);
+    background-image: image-url("00003149.jpg");
 }
 .sidebarMenuInner{
     margin:0;
@@ -90,7 +102,7 @@ input[type="checkbox"]:checked ~ #sidebarMenu {
 input[type=checkbox] {
     transition: all 0.3s;
     box-sizing: border-box;
-    display: none;
+    
 }
 .sidebarIconToggle {
     transition: all 0.3s;
@@ -149,4 +161,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     box-sizing: border-box;
     transform: rotate(-135deg);
     margin-top: -9px;
+}
+.checkingbox{
+  display: none;
 }

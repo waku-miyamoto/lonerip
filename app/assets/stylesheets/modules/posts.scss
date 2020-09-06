@@ -11,11 +11,12 @@
   .title{
     font-size: 30px;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
     .main-title{
       text-decoration: none;
       color: white;
       font-family: impact;
-      margin-left: 50px;
       
     }
   // }
@@ -35,6 +36,7 @@
 
 
 .wrapper{
+  margin-top: 60px;
   background-image: image-url("Photo2.jpg");
   background-size: cover;
   height: 100vh;
