@@ -66,7 +66,7 @@ gem 'mini_magick'
 gem 'devise-i18n'
 gem 'devise-i18n-views'
 gem 'kaminari'
-gem 'bootstrap', '~> 4.1.1'
+gem 'bootstrap', '~> 4.3.1'
 gem 'ransack'
 gem 'rails_12factor', group: :production
 gem 'mini_racer'
